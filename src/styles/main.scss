@@ -1,5 +1,7 @@
 @use "hero";
 @use "components/buttons";
+@use "about";
+@use "location";
 
 * {
     margin: 0;
@@ -8,5 +10,5 @@
     color: #fff;
     font-family: Orbitron, sans-serif;
     text-decoration: none;
+    letter-spacing: 1;
 }
-
