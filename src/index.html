@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <script src="https://kit.fontawesome.com/b1dbe2026e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+
 </head>
+
 <body>
     <header>
-        <div class="hero">  
+        <div class="hero">
             <div class="hero__container">
                 <img src="./images/evolux-logo.png" class="hero__logo" alt="Logo Evolux">
                 <h1 class="hero__title">CONTAGEM REGRESSIVA!</h1>
                 <span class="hero__contador">30d 2h 24m 28s</span>
                 <p class="hero__text">
                     Prepare-se para o maior evento de tecnologia que vai transformar sua jornada como DEV!
-                </p>  
-                <a class="button" href="#about">Garanta sua vaga gratuita!</a>  
+                </p>
+                <a class="button" href="#about">Garanta sua vaga gratuita!</a>
             </div>
         </div>
     </header>
+
     <section id="about">
         <div class="about">
             <div class="about__item">
                 <div class="about__item__content">
                     <h3 class="about__item__title">Sobre o evento</h3>
-                    <p class="about__item__text">O EvoluDev é mais do que uma data no calendário — é um movimento. Reuniremos mentes criativas, inovadoras e apaixonadas para compartilhar ideias, experiências e oportunidades únicas. Seja você estudante, profissional ou entusiasta, este evento foi feito para te inspirar.</p>
+                    <p class="about__item__text">O DevFuture é mais do que uma data no calendário — é um movimento.
+                        Reuniremos mentes criativas, inovadoras e apaixonadas para compartilhar ideias, experiências e
+                        oportunidades únicas. Seja você estudante, profissional ou entusiasta, este evento foi feito
+                        para te inspirar.</p>
                 </div>
                 <img class="about__item__image" src="./images/about-image.png" alt="Sobre o evento">
-            </div>      
+            </div>
         </div>
         <div class="location">
             <div class="location__item">
-                <img class="location__item__image" src="./images/image-gps.png" alt="localização do evento">
                 <div class="location__item__content">
                     <h3 class="location__item__title">Qual o local do evento?</h3>
                     <p class="location__item__text">
                         📍Rua da Inovação, 123 – Tech City<br>
                     </p>
                 </div>
-            </div>      
+                <img class="location__item__image" src="./images/image-gps.png" alt="localização do evento">
+            </div>
         </div>
     </section>
-    
+
+    <section class="inscription">
+        <div class="inscription__container">
+            <form>
+                <div class="inscription__content">
+                    <h3 class="inscription__content__title">Inscreva-se já!</h3>
+                    <label class="inscription__content__label" for="nome"><b>NOME COMPLETO:</b></label>
+                    <input class="inscription__content__input" type="text" id="nome" />
+                    <label class="inscription__content__label" for="telefone"><b>TELEFONE COM DDD:</b></label>
+                    <input class="inscription__content__input" type="text" id="telefone" />
+                    <label class="inscription__content__label" for="email"><b>E-MAIL: </b></label>
+                    <input class="inscription__content__input" type="email" id="email" />
+                    <button class="inscription__content__button button"><b>Enviar</b></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">
+            &copy; 2025 DevFuture. Todos os direitos reservados.
+        </p>
+        <div class="footer__icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="scripts/masks.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

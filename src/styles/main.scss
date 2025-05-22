@@ -2,6 +2,7 @@
 @use "components/buttons";
 @use "about";
 @use "location";
+@use "inscription";
 
 * {
     margin: 0;
@@ -12,3 +13,17 @@
     text-decoration: none;
     letter-spacing: 1;
 }
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 28px;
+    text-align: center;
+    font-size: 14px;
+
+    &__text {
+        margin-bottom: 12px;
+    }
+}
+
+
