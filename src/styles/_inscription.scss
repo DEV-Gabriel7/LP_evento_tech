@@ -1,8 +1,9 @@
 .inscription {
     width: 100%;
     height: 720px;
-    padding: 50px 80px;
-    background-color: black;
+    padding: 50px;
+    background-image: linear-gradient(135deg, #240b36, #c31432);
+
         
     &__container {
         background-color: rgba(255, 255, 255, 0.664);
@@ -22,12 +23,13 @@
 
         &__title {
             font-size: 48px;
-            color: black;
+            color: #ff3cac;
         }
 
         &__label {
             font-size: 18px;
             margin: 32px 0 14px;
+            color: #fff;
         }
 
         &__input {
@@ -41,12 +43,18 @@
         &__button {
             margin-top: 58px;
             font-size: 18px;
+            background-color: #ff3cac;
+            color: #000;
+
+            &:hover {
+                background-image: linear-gradient(135deg,#00ffe1b2, #ff3cac);
+            }
         }
     }
 
     @media(max-width: 640px) {
         height: 630px;
-        padding: 50px;
+        padding: 40px;
 
         &__container {
             height: 530px;

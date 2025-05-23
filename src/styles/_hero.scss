@@ -32,16 +32,30 @@
     &__title {
         margin: 28px 0;
         font-size: 32px;
+        color: #00b6a1;
     }
 
     &__contador {
         font-size: 48px;
+        color: #ff3cac;
     }
 
     &__text {
         padding: 44px 52px;
         font-size: 22px;
         margin-bottom: 18px;
+        color: #c7c7c7;;
+        max-width: 860px;
+        justify-self: center;
+    }
+
+    &__button {
+        background-color: #c2287f;
+        color: #000;
+
+        &:hover {
+            background-image: linear-gradient(135deg,#0c8f80, #ff3cac);
+        }
     }
 
     @media (max-width: 1024px) {
@@ -68,6 +82,12 @@
     }
 
     @media (max-width: 640px) {
+        height: 80vh;
+
+        &::before {
+            height: 80vh;
+        }
+
         &__logo {
             height: 80px;
             width: 80px;
