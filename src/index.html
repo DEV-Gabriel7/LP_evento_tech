@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/b1dbe2026e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
     
 
 </head>
@@ -23,7 +25,7 @@
             <div class="hero__container">
                 <img src="./images/evolux-logo.png" class="hero__logo" alt="Logo Evolux">
                 <h1 class="hero__title">CONTAGEM REGRESSIVA!</h1>
-                <span class="hero__contador">30d 2h 24m 28s</span>
+                <span class="hero__contador" id="contador"></span>
                 <p class="hero__text">
                     Prepare-se para o maior evento de tecnologia que vai transformar sua jornada como DEV!
                 </p>
@@ -32,9 +34,9 @@
         </div>
     </header>
 
-    <section id="event">
+    <section id="about_event">
         <div class="about">
-            <div class="about__item">
+            <div class="about__item" data-aos="fade-up-left">
                 <div class="about__item__content">
                     <h3 class="about__item__title">Sobre o evento</h3>
                     <p class="about__item__text">O DevFuture é mais do que uma data no calendário — é um movimento.
@@ -46,11 +48,12 @@
             </div>
         </div>
         <div class="location">
-            <div class="location__item">
+            <div class="location__item" data-aos="fade-up-right">
                 <div class="location__item__content">
                     <h3 class="location__item__title">Qual o local do evento?</h3>
                     <p class="location__item__text">
                         📍Rua da Inovação, 123 – Tech City<br>
+                        📅 26/12/2025 às 19hrs. 
                     </p>
                 </div>
                 <img class="location__item__image" src="./images/image-gps.png" alt="localização do evento">
@@ -59,7 +62,7 @@
     </section>
 
     <section id="subscribe" class="inscription">
-        <div class="inscription__container">
+        <div class="inscription__container" data-aos="zoom-in">
             <form>
                 <div class="inscription__content">
                     <h3 class="inscription__content__title">Inscreva-se já!</h3>
@@ -84,6 +87,7 @@
             <a href="https://github.com/DEV-Gabriel7"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/masks.js"></script>
     <script src="scripts/main.js"></script>
 </body>

@@ -2,7 +2,7 @@
     width: 100%;
     height: 70vh;
     padding: 100px 80px 50px;
-    background-image: linear-gradient(135deg, #1a1a2e, #16213e);
+    background-image: linear-gradient(#10103d, #16213e);
     
     &__item {
         display: grid;
@@ -59,7 +59,8 @@
     }
 
     @media (max-width:640px) {
-        height: 580px;
+        width: 100%;
+        height: auto;
         padding: 40px;
 
         &__item {
@@ -83,6 +84,4 @@
             }
         } 
     }
-
-    
 }

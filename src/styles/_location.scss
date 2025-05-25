@@ -4,7 +4,7 @@
     padding: 50px 80px;
     background-color: black;
     text-align: center;
-    background-image: linear-gradient(135deg, #16213e, #0f3460);
+    background-image: linear-gradient(135deg, #212888,  #16213e);
 
     &__item {
         display: flex;
@@ -35,8 +35,8 @@
         height: 280px;
 
         &__item {
-
             gap: 20px;
+
             &__title {
                 font-size: 24px;
                 padding-bottom: 24px;
@@ -45,6 +45,7 @@
             &__text {
                 text-align: center;
                 font-size: 18px;
+                margin-bottom: 16px;
             }
 
             &__image {
@@ -57,7 +58,8 @@
     }
 
     @media (max-width:640px) {
-        height: 380px;
+        width: 100%;
+        height: auto;
         padding: 40px;
         
         &__item {
