@@ -1,4 +1,4 @@
-# LP_evento_tech 🚀
+# Landing Page de um evento tech 🚀
 
 Landing page para evento de tecnologia, construída com HTML, SCSS e JavaScript.
 
